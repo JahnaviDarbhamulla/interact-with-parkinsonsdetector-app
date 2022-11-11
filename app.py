@@ -4,11 +4,11 @@ import pandas as pd
 import streamlit as st
 import pickle
 from PIL import Image
-image = Image.open('/content/parkinson.jpeg')
+image = Image.open('parkinson.jpeg')
 
 
 
-model = pickle.load(open('/content/parkinsons_model.sav','rb'))
+model = pickle.load(open('parkinsons_model.sav','rb'))
 
 # creating a function for prediction
 def disease_prediction(input_data):
